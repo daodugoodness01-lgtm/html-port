@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Company Newsletter</title>
+<style>
+  body { margin:0; padding:0; background:#f4f4f7; font-family:Arial, sans-serif; }
+  table { border-spacing:0; width:100%; }
+  img { border:0; display:block; }
+  a { text-decoration:none; }
+  .wrapper { width:100%; table-layout:fixed; background-color:#f4f4f7; padding-bottom:40px; }
+  .main { background:#ffffff; margin:0 auto; width:100%; max-width:600px; border-radius:6px; overflow:hidden; }
+  .header { background:#1e3a8a; color:white; padding:40px 20px; text-align:center; }
+  .header h1 { margin:0; font-size:28px; }
+  .intro { padding:30px 20px; color:#333; }
+  .intro h2 { margin-top:0; color:#1e3a8a; }
+  .section { padding:25px 20px; color:#444; border-top:1px solid #e5e7eb; }
+  .feature { display:flex; align-items:center; gap:15px; }
+  .feature img { width:80px; height:80px; border-radius:6px; }
+  .feature-text h3 { margin:0 0 5px; color:#1e3a8a; font-size:18px; }
+  .feature-text p { margin:0; font-size:15px; line-height:1.5; }
+  .cta { background:#1e3a8a; text-align:center; padding:40px 20px; color:white; }
+  .cta h2 { margin:0 0 10px; }
+  .cta a { background:white; color:#1e3a8a; padding:12px 24px; border-radius:4px; font-weight:bold; display:inline-block; }
+  .testimonial { background:#f9fafb; border-radius:6px; padding:20px; margin-bottom:15px; }
+  .testimonial p { margin:0; font-style:italic; }
+  .testimonial .author { margin-top:10px; font-weight:bold; color:#1e3a8a; }
+  .footer { text-align:center; color:#888; font-size:13px; padding:25px 15px; line-height:1.5; }
+  @media screen and (max-width:600px){
+    .feature{flex-direction:column; text-align:center;}
+    .feature img{margin-bottom:10px;}
+  }
+</style>
+</head>
+<body>
+  <center class="wrapper">
+    <table class="main" role="presentation">
+      <!-- Header -->
+      <tr>
+        <td class="header">
+          <h1>✨ Introducing Our Latest Updates</h1>
+          <p>Better, faster, and more powerful than ever.</p>
+        </td>
+      </tr>
+
+      <!-- Intro -->
+      <tr>
+        <td class="intro">
+          <h2>Hi Goodness,</h2>
+          <p>
+            We’re excited to share what’s new at <strong>YourCompany</strong> this month!  
+            Our team has been working hard to bring you new features, improved design,  
+            and a smoother experience.
+          </p>
+        </td>
+      </tr>
+
+      <!-- Features -->
+      <tr>
+        <td class="section">
+          <h2>🚀 New Features</h2>
+
+          <div class="feature">
+            <img src="file:///C:/Users/PC/Documents/html/dash.jpg" alt="Feature 1" />
+            <div class="feature-text">
+              <h3>Smart Analytics Dashboard</h3>
+              <p>Get insights faster with real-time data visualization and customizable reports.</p>
+            </div>
+          </div>
+
+          <div class="feature" style="margin-top:20px;">
+            <img src="file:///C:/Users/PC/Documents/html/Enhanced%20Security.jpg" alt="Feature 2" />
+            <div class="feature-text">
+              <h3>Enhanced Security</h3>
+              <p>We’ve implemented new multi-layer protection to keep your data even safer.</p>
+            </div>
+          </div>
+
+          <div class="feature" style="margin-top:20px;">
+            <img src="file:///C:/Users/PC/Documents/html/Team%20Collaboration%20Tools.jpg" alt="Feature 3" />
+            <div class="feature-text">
+              <h3>Team Collaboration Tools</h3>
+              <p>Invite colleagues, assign tasks, and track progress in one central workspace.</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <!-- Testimonials -->
+      <tr>
+        <td class="section">
+          <h2>What Our Users Say</h2>
+          <div class="testimonial">
+            <p>“This update changed the way our team works — everything’s faster and easier!”</p>
+            <div class="author">– Alex P., Project Manager</div>
+          </div>
+          <div class="testimonial">
+            <p>“I love the new analytics dashboard. The insights have helped us grow our sales by 20%.”</p>
+            <div class="author">– Jamie L., Business Owner</div>
+          </div>
+        </td>
+      </tr>
+
+      <!-- CTA -->
+      <tr>
+        <td class="cta">
+          <h2>Try It Out Today</h2>
+          <p>Log in now and explore all the new improvements.</p>
+          <a href="{{CTA_URL}}" target="_blank">Go to Dashboard</a>
+        </td>
+      </tr>
+
+      <!-- Footer -->
+      <tr>
+        <td class="footer">
+          © {{Year}} YourCompany Inc. All rights reserved.<br>
+          1234 Market Street, San Francisco, CA 94103<br>
+          <a href="#" style="color:#1e3a8a;">Unsubscribe</a> | <a href="#" style="color:#1e3a8a;">Privacy Policy</a>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
